@@ -35,3 +35,9 @@ div.container a.brand {
     margin-left: 0;
     padding: 8px 20px 12px 40px;
 }
+
+table tr:hover {
+        background: #BBCEE9;
+        border-radius: 5px;
+ 	
+      }
