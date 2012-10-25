@@ -6,7 +6,7 @@ use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Chihuo\Model\Restaurant; 
 
-class RestaurantController extends AbstractActionController
+class IndexController extends AbstractActionController
 {
     protected $restaurantTable;
     

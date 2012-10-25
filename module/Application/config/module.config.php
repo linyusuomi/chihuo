@@ -15,7 +15,7 @@ return array(
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
-                        'controller' => 'Chihuo\Controller\Restaurant',
+                        'controller' => 'Chihuo\Controller\Index',
                         'action'     => 'index',
                     ),
                 ),

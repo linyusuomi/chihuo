@@ -4,7 +4,7 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'Chihuo\Controller\Restaurant' => 'Chihuo\Controller\RestaurantController',
+            'Chihuo\Controller\Index' => 'Chihuo\Controller\IndexController',
         ),
     ),
     
@@ -20,7 +20,7 @@ return array(
                         'id'     => '[0-9]+',
                     ),
                     'defaults' => array(
-                        'controller' => 'Chihuo\Controller\Restaurant',
+                        'controller' => 'Chihuo\Controller\Index',
                         'action'     => 'index',
                     ),
                 ),
