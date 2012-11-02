@@ -1,43 +1,55 @@
-body {
-    padding-top: 60px;
-    padding-bottom: 40px;
+html,body{
+    font: 100% 微软雅黑, 宋体, 新宋体;
+    margin: 0; /* 最好将 body 元素的边距和填充设置为 0 以覆盖不同的浏览器默认值 */
+    padding: 0;
+    text-align: center; /* 在 IE 5* 浏览器中，这会将容器居中。文本随后将在 #container 选择器中设置为默认左对齐 */
+    color: #FFF;
+    height: 100%; /*这里将高度设置为100%是这个布局实现自适应高度的关键，只有这里设置了高度，下面div的高度设置才起作用*/
+}
+#layout {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+
+}
+#header {
+    height: 13%;
+    border:1px solid #96C2F1;
+    background-color: #EFF7FF;
+}
+#container {
+    height: 82%;
+    border:1px solid #9BDF70;
+    background-color: #F0FBEB
+}
+#container #sidebar {
+    height: 100%;
+    width: 20%;
+    background-color: #F0FBEB;
+    float: left;
+}
+#container #main {
+   height: 100%;
+    width: 80%;
+    background-color: #EEFAFF;
+    float: left;
+    font-sytle:italic;
+    color:gray;
 }
 
-.zf-green {
-    color: #68b604;
+.table{
+    width:50%;
+    float:left;
+    
+    
 }
-
-.btn-success {
-  background-color: #57a900;
-  background-image: -moz-linear-gradient(top, #70d900, #57a900);
-  background-image: -ms-linear-gradient(top, #70d900, #57a900);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70d900), to(#57a900));
-  background-image: -webkit-linear-gradient(top, #70d900, #57a900);
-  background-image: -o-linear-gradient(top, #70d900, #57a900);
-  background-image: linear-gradient(top, #70d900, #57a900);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d900', endColorstr='#57a900', GradientType=0);
+#footer {
+    height: 5%;
+    background-color: #FAFCFD;
 }
-
-.btn-success:hover,
-.btn-success:active,
-.btn-success.active,
-.btn-success.disabled,
-.btn-success[disabled] {
-  background-color: #57a900;
+.clearfloat { /* 此类应当放在 div 或 break 元素上，而且该元素应当是完全包含浮动的容器关闭之前的最后一个元素 */
+    clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
 }
-
-.btn-success:active, .btn-success.active {
-  background-color: #57a900;
-}
-
-div.container a.brand {
-    background: url("../images/zf2-logo.png") no-repeat scroll 0 10px transparent;
-    margin-left: 0;
-    padding: 8px 20px 12px 40px;
-}
-
-table tr:hover {
-        background: #BBCEE9;
-        border-radius: 5px;
- 	
-      }
